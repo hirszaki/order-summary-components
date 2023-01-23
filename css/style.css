@@ -1,0 +1,161 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(../img/pattern-background-mobile.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.box {
+	height: 73vh;
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 20px;
+	background-color: white;
+	font-family: 'Red Hat Display', sans-serif;
+	font-size: 16px;
+}
+
+.one {
+	background-image: url(../img/illustration-hero.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 25vh;
+	width: 100%;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.two {
+	height: 20vh;
+}
+
+.three {
+	height: 20vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.four {
+	height: 5vh;
+	display: flex;
+	justify-content: center;
+	align-items: start;
+}
+
+button {
+	width: 230px;
+	border-radius: 10px;
+}
+
+.btn-1 {
+	height: 65px;
+	display: flex;
+	justify-content: center;
+	justify-content: space-between;
+	align-items: center;
+	border-style: none;
+	padding: 0px 5px;
+}
+
+.btn-1 p {
+	color: rgb(24, 26, 158);
+	text-decoration: underline;
+	font-weight: 700;
+}
+
+.tm {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn-2 {
+	height: 40px;
+	background-color: hsl(223, 91%, 33%);
+	color: white;
+	font-weight: 700;
+	border: 2px solid hsl(223, 91%, 33%);
+	margin-top: 20px;
+	box-shadow: -1px 6px 12px hsl(225, 53%, 73%);
+}
+h1 {
+	font-weight: 900;
+	text-align: center;
+}
+
+h3 {
+	width: 100px;
+	font-weight: 700;
+	font-size: 12px;
+	text-align: center;
+}
+
+span {
+	color: rgb(193, 186, 186);
+}
+
+.four span {
+	color: rgb(123, 120, 120);
+	font-weight: 900;
+	margin-top: 5px;
+}
+
+p {
+	font-weight: 500;
+	text-align: center;
+	color: hsl(224, 23%, 55%);
+	padding: 20px;
+}
+
+button:hover p {
+	cursor: pointer;
+}
+
+.btn-2:hover {
+	cursor: pointer;
+}
+
+.four span:hover {
+	cursor: pointer;
+}
+
+@media only screen and (min-width: 992px) {
+	.container {
+		background-image: url(../img/pattern-background-desktop.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.box {
+		width: 400px;
+	}
+
+	.one {
+		width: 100%;
+		background-size: cover;
+	}
+
+	.two {
+		margin-top: 20px;
+	}
+
+	button {
+		width: 300px;
+	}
+
+	h3 {
+		padding-left: 5px;
+	}
+}
