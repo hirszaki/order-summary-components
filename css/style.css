@@ -4,14 +4,14 @@
 	margin: 0;
 }
 
-.container {
-	height: 100vh;
+.section {
+	min-height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-image: url(../img/pattern-background-mobile.svg);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 }
 
 .box {
@@ -96,7 +96,7 @@ h1 {
 	text-align: center;
 }
 
-h3 {
+h2 {
 	width: 100px;
 	font-weight: 700;
 	font-size: 12px;
@@ -133,7 +133,7 @@ button:hover p {
 }
 
 @media only screen and (min-width: 992px) {
-	.container {
+	.section {
 		background-image: url(../img/pattern-background-desktop.svg);
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -155,7 +155,7 @@ button:hover p {
 		width: 300px;
 	}
 
-	h3 {
+	h2 {
 		padding-left: 5px;
 	}
 }
